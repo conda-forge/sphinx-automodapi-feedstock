@@ -1,7 +1,7 @@
 {% set name = "sphinx-automodapi" %}
-{% set version = "0.7" %}
+{% set version = "0.8" %}
 {% set git_url = "https://github.com/astropy/sphinx-automodapi" %}
-{% set sha256 = "684e623d1cbccfb1211496533142c55c860ed9249892b85d0f0461dd32e4e511" %}
+{% set sha256 = "247d05ae5597ec86475e7954b788b379190a1ec0ee2f1bc60ae5086a3f29b16a" %}
 
 package:
   name: {{ name|lower }}
