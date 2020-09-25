@@ -1,7 +1,6 @@
 {% set name = "sphinx-automodapi" %}
 {% set version = "0.13" %}
 {% set git_url = "https://github.com/astropy/sphinx-automodapi" %}
-{% set sha256 = "e1019336df7f7f0bcbf848eff7b84e7bef71691a57d8b5bda9107a2a046a226a" %}
 
 package:
   name: {{ name|lower }}
@@ -10,7 +9,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: e1019336df7f7f0bcbf848eff7b84e7bef71691a57d8b5bda9107a2a046a226a
 
 build:
   noarch: python
@@ -18,12 +17,12 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
-    - python
+  host:
+    - python >=3.6
     - pip
     - sphinx >=1.7
   run:
-    - python
+    - python >=3.6
     - sphinx >=1.7
 
 test:
@@ -32,7 +31,8 @@ test:
 
 about:
   home: {{ git_url }}
-  license: BSD
+  license: BSD-3-Clause
+  license_family: BSD
   license_file: LICENSE.rst
   summary: Sphinx extension for auto-generating API documentation for entire modules
   description: |
