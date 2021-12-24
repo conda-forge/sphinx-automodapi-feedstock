@@ -20,10 +20,10 @@ requirements:
   host:
     - python >=3.6
     - pip
-    - sphinx >=1.7
+    - sphinx >=2
   run:
     - python >=3.6
-    - sphinx >=1.7
+    - sphinx >=2
 
 test:
   imports:
