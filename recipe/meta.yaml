@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -21,6 +21,7 @@ requirements:
     - python >=3.6
     - pip
     - sphinx >=2
+    - setuptools_scm
   run:
     - python >=3.6
     - sphinx >=2
