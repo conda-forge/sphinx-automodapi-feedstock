@@ -30,13 +30,18 @@ requirements:
 
 test:
   requires:
+    - graphviz
     - pip
+    - pytest >=4.6
   imports:
     - sphinx_automodapi
   commands:
     # check metadata
     - python -m pip check sphinx-automodapi
     - python -m pip show sphinx-automodapi
+    # run test suite
+    - python -m pytest -ra --pyargs sphinx_automodapi
+        -k 'not cython'
 
 about:
   home: {{ git_url }}
