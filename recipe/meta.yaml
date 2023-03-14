@@ -9,9 +9,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: fd5871e054df7f3e299dde959afffa849f4d01c6eac274c366b06472afcb06aa
-  patches:
-    # backport https://github.com/astropy/sphinx-automodapi/commit/3194e0a
-    - setuptools-scm.patch
 
 build:
   noarch: python
