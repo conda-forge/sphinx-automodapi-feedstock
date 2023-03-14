@@ -1,11 +1,11 @@
-About sphinx-automodapi
-=======================
+About sphinx-automodapi-feedstock
+=================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-automodapi-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/astropy/sphinx-automodapi
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-automodapi-feedstock/blob/main/LICENSE.txt)
 
 Summary: Sphinx extension for auto-generating API documentation for entire modules
 
