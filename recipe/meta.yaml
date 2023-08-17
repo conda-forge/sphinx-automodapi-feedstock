@@ -1,5 +1,5 @@
 {% set name = "sphinx-automodapi" %}
-{% set version = "0.15.0" %}
+{% set version = "0.16.0" %}
 {% set git_url = "https://github.com/astropy/sphinx-automodapi" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fd5871e054df7f3e299dde959afffa849f4d01c6eac274c366b06472afcb06aa
+  sha256: 6c673ef93066408e5ad3e2fa3533044d432a47fe6a826212b9ebf5f52a872554
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
     - setuptools-scm
   run:
     - python >=3.7
-    - sphinx >=2
+    - sphinx >=4
 
 test:
   requires:
@@ -53,7 +53,7 @@ about:
 
 extra:
   recipe-maintainers:
-    - astrofrog-conda-forge
+    - astrofrog
     - drdavella
     - mwcraig
     - bsipocz
