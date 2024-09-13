@@ -1,5 +1,5 @@
 {% set name = "sphinx-automodapi" %}
-{% set version = "0.17.0" %}
+{% set version = "0.18.0" %}
 {% set git_url = "https://github.com/astropy/sphinx-automodapi" %}
 
 package:
@@ -7,12 +7,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7ccdadad57add4aa9149d9f2bb5cf28c8f8b590280b4735b1156ea8355c423a1
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace("-", "_") }}-{{ version }}.tar.gz
+  sha256: 7bf9d9a2cb67a5389c51071cfd86674ca3892ca5d5943f95de4553d6f35dddae
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
